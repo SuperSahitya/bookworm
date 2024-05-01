@@ -1,0 +1,255 @@
+.navContainer {
+  position: fixed;
+  z-index: 1000;
+}
+
+.navbar {
+  position: relative;
+  z-index: 1000;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  align-items: center;
+  border-bottom: 3px solid #321e1e;
+  max-height: 80px;
+}
+
+.hamburger {
+  height: 60%;
+  aspect-ratio: 1;
+  background-image: url("/menu.svg");
+  background-size: cover;
+}
+
+.brand {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 60%;
+  aspect-ratio: 1;
+  background-image: url("../../public/leaf.svg");
+  background-size: cover;
+}
+
+.name {
+  font-size: 1.3rem;
+  letter-spacing: -2px;
+  font-weight: 700;
+}
+
+.cart {
+  height: 100%;
+  aspect-ratio: 1;
+  background-image: url("../../public/cart.svg");
+  background-size: cover;
+  z-index: 1000;
+}
+
+.panel {
+  position: absolute;
+  z-index: 999;
+  width: 100vw;
+  /* height: 35vh; */
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  min-height: 350px;
+  border-bottom: 3px solid #321e1e;
+  /* padding: 50px; */
+}
+
+@media (max-width: 550px) {
+  .panel {
+    flex-direction: column;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vh;
+}
+
+.cartPanel {
+  background-color: #f4f1e0;
+  color: #321e1e;
+  position: absolute;
+  right: 0;
+  top: 10vh;
+  z-index: 1000;
+  min-height: 90vh;
+  max-height: calc(100vh - 80px);
+  width: 50vw;
+  /* max-width: 600px; */
+  border-left: 2px #321e1e;
+  border-left-style: solid;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.cartItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin-top: 50px; */
+  margin-bottom: 50px;
+  /* overflow-y: auto; */
+  width: 100%;
+  /* max-height: 80%; */
+}
+
+.border {
+  height: 1px;
+  background-color: #321e1e;
+  width: 100%;
+}
+
+@media (max-width: 530px) {
+  .name {
+    font-size: 1.5rem;
+  }
+}
+
+.cartHeading {
+  width: 100%;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 2rem;
+}
+
+.closeCart {
+  width: 100%;
+  padding: 1.2rem 30px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.3rem;
+}
+
+@media (min-height: 800px) {
+  .cartPanel {
+    /* height: calc(100vh - 80px); */
+    top: 80px;
+    min-height: calc(100vh - 40px);
+  }
+}
+
+.checkoutContainer {
+  display: flex;
+  width: 100%;
+  height: 220px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: flex-end;
+}
+
+.checkoutButton {
+  background-color: #321e1e;
+  color: #f4f1e0;
+  padding: 15px;
+  width: 50%;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtotalContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 50px;
+}
+.shippingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 50px;
+}
+
+.subtotalHeading {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.subtotalPrice {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.shippingHeading {
+  font-size: 1.1rem;
+}
+.shipping {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 800px) {
+  .cartPanel {
+    width: 100vw;
+  }
+}
+
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #321e1e84;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 0.4rem;
+  padding-bottom: 0.6rem;
+}
+.cartDataContainer {
+  display: flex;
+  height: 40%;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.loginButton {
+  margin-right: 0.7rem;
+  color: #321e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.logButton {
+  background-color: #321e1e;
+  color: #f4f1e0;
+  font-weight: 400;
+  padding: 5px 10px;
+}

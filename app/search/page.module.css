@@ -1,0 +1,63 @@
+.container {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 4vh;
+}
+
+.searchedList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4vh;
+}
+
+.input {
+  width: 70%;
+  padding: 7px 10px;
+  min-width: 200px;
+  /* border-radius: 20px; */
+}
+
+.input:focus {
+  outline: 2px dashed #321e1e;
+  outline-offset: -5px;
+}
+
+.inputForm {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.icon {
+  color: #321e1e;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+@media (min-height: 800px) {
+  .container {
+    margin-top: 80px;
+  }
+}
+
+.searchHeading {
+  font-weight: 500;
+}
+
+.searchTerm {
+  font-family: 700;
+}
+
+.authorHeading {
+  margin-top: 30px;
+}

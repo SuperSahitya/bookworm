@@ -1,0 +1,211 @@
+.container {
+  margin-top: 10vh;
+  width: 100vw;
+  display: flex;
+}
+
+.product {
+  display: flex;
+  width: 100%;
+  padding: 2vh 3vw;
+  display: flex;
+}
+
+.productImages {
+  display: flex;
+  /* flex-direction: column; */
+  width: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+  /* height: 80vh; */
+  padding: 5vh 0vh;
+}
+
+.productData {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border-left: 2px solid #321e1e;
+  padding-left: 5vw;
+  margin-top: 3vh;
+}
+
+.productAuthor {
+  color: #321e1e;
+  font-weight: 500;
+}
+.categoryList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.categoriesName {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+}
+
+.category {
+  padding: 7px;
+  background-color: #321e1e;
+  color: #f4f1e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-wrap: pretty; */
+  text-align: center;
+}
+
+.topImage {
+  width: 50%;
+  max-width: 300px;
+  aspect-ratio: 467/700;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* outline: 2px dashed #321e1e; */
+  /* outline-offset: 3px; */
+  background-image: url("/books/crime-and-punishment.jpeg");
+}
+.nextImage {
+  width: 30%;
+  aspect-ratio: 467/700;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* outline: 2px dashed #321e1e; */
+  /* outline-offset: 3px; */
+  background-image: url("/books/lord-of-the-flies.jpeg");
+}
+
+.productHeading {
+  margin-top: 2vh;
+}
+
+.productDescription {
+  margin-top: 5vh;
+  font-weight: 400;
+}
+
+.productPrice {
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 4vh 0vh;
+}
+
+.addToCart {
+  height: 7vh;
+  width: 60%;
+  background-color: #321e1e;
+  color: #f4f1e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+  word-spacing: 4px;
+}
+
+.bookmark {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  color: #321e1e;
+  font-weight: 500;
+}
+.productDetail {
+  margin-top: 3vh;
+}
+
+.detail {
+  /* padding: 2vh 0vh; */
+  margin-top: 2vh;
+}
+
+.productDetailList {
+  padding-left: 20px;
+}
+
+.listData {
+  padding: 5px 0px;
+}
+
+.methodToBuy {
+  margin-top: 8px;
+  /* display: flex; */
+}
+
+.bookInfo {
+  margin-top: 3vh;
+}
+
+.payLater {
+  /* padding: 5px;
+  background-color: #321e1e;
+  color: #f4f1e0;
+  display: grid;
+  place-items: center;
+  width: fit-content; */
+  font-weight: 500;
+}
+
+@media (max-width: 1440) {
+  .productImages {
+    flex-direction: column;
+    padding: 2vh 0vh;
+  }
+  .product {
+    flex-direction: column;
+  }
+  .productInfo {
+    width: 90%;
+  }
+  .topImage {
+    width: 90%;
+  }
+  .bookInfo {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .product {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .productImages {
+    flex-direction: column;
+  }
+  .topImage {
+    width: 90%;
+  }
+  .productData {
+    width: 90%;
+    border: none;
+  }
+  .productPrice {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2.5vh 0vh;
+  }
+  .addToCart {
+    align-self: center;
+  }
+  .methodToBuy {
+    align-items: center;
+    text-align: center;
+  }
+  .bookInfo {
+    width: 90%;
+  }
+}

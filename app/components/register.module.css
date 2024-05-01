@@ -1,0 +1,73 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #321e1e;
+  outline: 2px dashed #321e1e;
+  outline-offset: -7px;
+  padding: 10vh;
+  min-height: 500px;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
+}
+.label {
+  width: 100%;
+}
+
+.divContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #321e1e;
+  color: #f4f1e0;
+}
+
+.signinLink {
+  text-align: center;
+  background-color: #321e1e;
+  color: #f4f1e0;
+  padding: 5px 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 1vh;
+}
+
+.heading {
+  margin-bottom: 2vh;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 5vh;
+  }
+}
+.error {
+  position: absolute;
+  color: #f71735;
+  /* color: #ff0022; */
+  background-color: transparent;
+  top: 93%;
+  width: 100%;
+  /* padding-top: 10px; */
+  text-align: center;
+}
