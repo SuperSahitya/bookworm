@@ -20,6 +20,30 @@ const Navbar = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    async function checkUserSession() {
+      try {
+        const response = await fetch("http://localhost:8000/verify", {
+          method: "POST",
+          credentials: "include",
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log(data);
+        setUser(data);
+        console.log(user);
+      } catch (error) {
+        console.error("Failed to check user session:", error);
+      }
+    }
+
+    checkUserSession();
+  }, []);
+
+  useEffect(() => {
     async function fetchCart() {
       setIsLoading(true);
       try {
