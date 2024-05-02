@@ -30,29 +30,25 @@ const Profile = () => {
         <div className={styles.image}></div>
         <div className={styles.profileData}>
           {user ? (
-            <div className={styles.userName}>
-              {user ? user.name : ""}
-            </div>
+            <div className={styles.userName}>{user ? user.name : ""}</div>
           ) : (
             ""
           )}
           {user ? (
-            <div className={styles.email}>
-              {user ? user.email : ""}
-            </div>
+            <div className={styles.email}>{user ? user.email : ""}</div>
           ) : (
             ""
-          )}
-          {user ? (
-            <div onClick={handleLogout} className={styles.logButton}>
-              Log Out
-            </div>
-          ) : (
-            <Link href={"/login"} className={styles.logButton}>
-              Log In
-            </Link>
           )}
         </div>
+        {user ? (
+          <div onClick={handleLogout} className={styles.logButton}>
+            Log Out
+          </div>
+        ) : (
+          <Link href={"/login"} className={styles.logButton}>
+            Log In
+          </Link>
+        )}
       </div>
     </>
   );

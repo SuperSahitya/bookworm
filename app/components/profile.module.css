@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   min-width: 350px;
   border: 2px solid #321e1e;
   outline: 2px dashed #321e1e;
@@ -12,9 +12,11 @@
 }
 
 .image {
-  height: 40%;
+  height: 20%;
   min-height: 50px;
+  max-width: 50% ;
   aspect-ratio: 1;
+  overflow: hidden;
   background-image: url("../../public/profile.svg");
   background-repeat: no-repeat;
   /* background-size: 90%; */
@@ -28,13 +30,14 @@
   padding: 20px;
   margin: 10px;
 }
+
 .profileData {
   color: #321e1e;
   height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   gap: 20px;
   min-height: 250px;
 }
